@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Volka English — Free Courses</title>
+<link rel="stylesheet" href="style.css">
+<!-- Google Identity Services: replace CLIENT_ID with your OAuth web client id -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<header class="top">
+<h1>Volka English</h1>
+<div class="actions">
+<div id="gsi-button"></div>
+<button id="open-dashboard" class="btn">Teacher Dashboard</button>
+</div>
+</header>
+
+
+<main class="container">
+<section id="hero" class="card">
+<h2>Welcome — Learn English for free</h2>
+<p>Browse lessons below. Sign in with Google if you want to bookmark progress.</p>
+</section>
+
+
+<section class="card" id="lessons">
+<h3>Lessons</h3>
+<div id="lessons-list" class="grid"></div>
+</section>
+
+
+<section class="card hidden" id="player-section">
+<button id="close-player" class="small">Close</button>
+<h3 id="player-title"></h3>
+<div id="player-wrap"></div>
+<p id="player-desc" class="muted"></p>
+</section>
+</main>
+
+
+<footer class="foot">@s.abariiii</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
