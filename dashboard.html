@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dashboard — Volka English</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+<main class="container">
+<h1>Teacher Dashboard</h1>
+<p class="muted">Sign in with Google to show your name (optional). Create lessons and export JSON.</p>
+
+
+<div class="card">
+<label>Lesson title</label>
+<input id="title" placeholder="Basic greetings" />
+<label>YouTube link (share or embed url)</label>
+<input id="ytlink" placeholder="https://www.youtube.com/watch?v=..." />
+<label>Description</label>
+<textarea id="desc" rows="3"></textarea>
+<label>Course / Topic (optional)</label>
+<input id="course" placeholder="e.g. Beginner - Greetings" />
+<div style="margin-top:10px;display:flex;gap:10px;">
+<button id="add-lesson" class="btn">Add lesson</button>
+<button id="export-json" class="btn">Export JSON (copy to lessons.json)</button>
+<button id="clear" class="btn ghost">Clear</button>
+</div>
+</div>
+
+
+<div class="card">
+<h3>Preview</h3>
+<div id="preview"></div>
+</div>
+
+
+<div class="card">
+<h3>Existing JSON (paste here to edit)</h3>
+<textarea id="paste-json" rows="8" placeholder='Paste your lessons.json here to load'></textarea>
+<div style="margin-top:8px"><button id="load-json" class="btn">Load JSON</button></div>
+</div>
+
+
+<p class="muted">When you export JSON, copy it and replace the repo's <code>lessons.json</code>. Commit & push to update site.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
